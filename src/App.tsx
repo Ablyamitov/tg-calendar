@@ -22,7 +22,7 @@ function App() {
 
 			const user = Telegram.initDataUnsafe?.user;
 			if (user) {
-				fetch(`/api/events?chat_id=${user.id}`)
+				fetch(`https://f7c5-149-102-241-19.ngrok-free.app/api/events?chat_id=${user.id}`)
 					.then((res) => res.json())
 					.then(setEvents);
 			}
